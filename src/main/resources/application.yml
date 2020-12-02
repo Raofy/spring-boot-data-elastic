@@ -3,3 +3,10 @@ spring:
     rest:
       uris: 192.168.9.173:9200
 
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    property-naming-strategy: SNAKE_CASE
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
